@@ -21,7 +21,7 @@ class VideoPlayer extends FlxBasic {
 		super();
 
 	        #if android
-                VideoView.playVideo('file:///assets/videos/video.mp4');// o video pode ser em webm também 
+                VideoView.playVideo('file:///android_asset/assets/videos/video.mp4');// o video pode ser em webm também 
                 VideoView.onCompletion = function(){
 		        if (finishCallback != null){
 			        finishCallback();
